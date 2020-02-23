@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "a1721d10-b351-43f1-96f0-91e4c529a13a",
+		"name": "hb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hepsiburada_api",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2247e5b7-4ee5-4b78-93c5-2dd6c66f3fa8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://generator.swagger.io/api/swagger.json",
+					"protocol": "http",
+					"host": [
+						"generator",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"api",
+						"swagger.json"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
